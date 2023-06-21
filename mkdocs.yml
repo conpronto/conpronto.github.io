@@ -3,7 +3,7 @@ site_name: Pronto Api
 theme:
   name: material
   logo: assets/logo.png
-  favicon: assets/images/favicon.png
+  favicon: assets/favicon.png
   features:
     - navigation.tracking
     - navigation.instant
