@@ -24,6 +24,7 @@ theme:
     - navigation.footer
 
   language: en
+  
   palette:
     - scheme: default
       toggle:
