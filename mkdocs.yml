@@ -3,7 +3,7 @@ site_name: Pronto Api
 theme:
   name: material
   logo: assets/logo.png
-  favicon: images/favicon.png
+  favicon: assets/images/favicon.png
   features:
     - navigation.tracking
     - navigation.instant
@@ -21,6 +21,8 @@ theme:
     - attr_list
     - md_in_html
     - pymdownx.superfences
+    - navigation.footer
+
   language: en
   palette:
     - scheme: default

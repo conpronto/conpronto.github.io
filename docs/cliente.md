@@ -122,7 +122,7 @@ Por medio del método PUT enviando en el cuerpo del requerimiento los datos del 
     	}],
 }
 ``` 
-*NOTA:
+*NOTA :material-information-outline:{ title="Nota" }:
 
 :bangbang: En el caso de modificar un cliente de tipo “Persona”, los parámetros razon_social y nombre_comercial no son obligatorios. Así mismo, en el caso de modificar un cliente de tipo “Empresa”, los parámetros nombre y apellido no son obligatorios.
 
