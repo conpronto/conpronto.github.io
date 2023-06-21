@@ -49,7 +49,7 @@ Las siguientes son url's válidas para uso del api:
 | `https://api.conpronto.com/cliente/`| POST |
 | `https://api.conpronto.com/cliente/`| PUT |
 | `https://api.conpronto.com/cliente/`| GET |
-| `https://api.conpronto.com/cliente/`| GET |
+| `https://api.conpronto.com/cliente/<ID>/`| GET |
 
 ### Url's de contactos
 
@@ -92,3 +92,12 @@ Las siguientes son url's válidas para uso del api:
 | ----------- | ---------------------------------- |
 | `https://api.conpronto.com/notificacion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`| GET |
 | `https://api.conpronto.com/cliente/<ID>/notificacion`| GET |
+
+### Url's de suscripciones
+
+| URL     |Método                                 |
+| ----------- | ---------------------------------- |
+| `https://api.contifico.com/documento/<ID>/suscripcion/`| POST |
+| `https://api.conpronto.com/suscripcion/`| PUT |
+| `https://api.conpronto.com/suscripcion/<ID>/`| GET |
+| `https://api.conpronto.com/suscripcion/`| GET |

@@ -5,29 +5,29 @@
 [
     {
         "id": "1234",
-        "fecha_modificacion": null,
+        "fecha_modificacion": "21/06/2023",
         "razon_social": null,
         "nombre_comercial": null,
         "nombre": "Andres",
         "apellido": "Lopez",
-        "tipo_identificacion": 0,
-        "identificacion": "0999999999001",
-        "tipo_persona": 0,
+        "tipo_identificacion": "1",
+        "identificacion": "0999999999",
+        "tipo_persona": "1",
         "direccion": "Guayaquil",
     	"contactos":
 		[{
             "id": "113",
-    	    "nombre": "Prueba",
-    	    "apellido": "Prueba1",
-    	    "movil": "0942985587",
-    	    "email ": "noname@noname"
+    	    "nombre": "Andres",
+    	    "apellido": "Lopez",
+    	    "movil": "+593942985587",
+    	    "email ": "alopez@gmail.com"
     	}
 		{
             "id": "115",
-    	    "nombre": "Prueba2",
-    	    "apellido": "Prueba2",
-    	    "movil": "0942952487",
-    	    "email ": "noname@noname"
+    	    "nombre": "Juan",
+    	    "apellido": "Lopez",
+    	    "movil": "+593942952487",
+    	    "email ": "jlopez@gmail.com"
     	}],
 }]
 ```
@@ -37,16 +37,16 @@ Los tipos de identificación son:
 
 | Valor       | Tipo                                 |
 | ----------- | ------------------------------------ |
-| `0  `       | Cédula                               |
-| `1  `       | Ruc|
-| `2  `       | Pasaporte |
+| `1  `       | Cédula                               |
+| `2  `       | Ruc|
+| `3  `       | Pasaporte |
 
 Los tipos de persona son:
 
 | Valor       | Tipo                                 |
 | ----------- | ------------------------------------ |
-| `0  `       | Persona                            |
-| `1  `       | Empresa|
+| `1  `       | Persona                            |
+| `2  `       | Empresa|
 
 | Parámetro   | Tipo    | Longitud | Descripción |
 | ----------- | ------- | -------- | ----------- |
@@ -77,15 +77,15 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
     	"nombre_comercial": "Andres Lopez",
     	"nombre": null,
     	"apellido": null,
-    	"tipo_identificacion": 0,
+    	"tipo_identificacion": "2",
     	"identificacion": "0999954599001",
-    	"tipo_persona": "Persona",
+    	"tipo_persona": "2",
     	"direccion": "Guayaquil",
     	"contactos": 
 		[{
-    	   "nombre": "Prueba",
-    	   "apellido": "Prueba1",
-    	   "movil": "0942985587",
+    	   "nombre": "Andres",
+    	   "apellido": "Lopez",
+    	   "movil": "+593942985587",
     	   "email": "noname@noname"
     	}]
 }
@@ -109,16 +109,16 @@ Por medio del método PUT enviando en el cuerpo del requerimiento los datos del 
         "nombre_comercial": null,
         "nombre": "Andres",
         "apellido": "Lopez",
-        "tipo_identificacion": 0,
-        "identificacion": "0999999999001",
-        "tipo_persona": 0,
+        "tipo_identificacion": "1",
+        "identificacion": "0999999999",
+        "tipo_persona": "1",
         "direccion": "Guayaquil",
     	"contactos": 
 		[{
-    	    "nombre": "Prueba",
-    	    "apellido": "Prueba1",
-    	    "movil": "0942985587",
-    	    "email ": "noname@noname"
+    	    "nombre": "Andrés",
+    	    "apellido": "Lopez",
+    	    "movil": "+593942985587",
+    	    "email ": "alopez@gmail.com"
     	}],
 }
 ``` 
@@ -138,29 +138,28 @@ Devuelve un cliente con el <ID> solicitado.
 [
     {
         "id": "1234",
-        "fecha_modificacion": null,
+        "fecha_modificacion": "21/06/2023",
         "razon_social": null,
         "nombre_comercial": null,
         "nombre": "Andres",
         "apellido": "Lopez",
-        "tipo_identificacion": 0,
-        "identificacion": "0999999999001",
-        "tipo_persona": 0,
+        "tipo_identificacion": "1",
+        "identificacion": "0999999999",
+        "tipo_persona": "1",
         "direccion": "Guayaquil",
-    	"contactos":
 		"contactos":
 		[{
             "id": "113",
-    	    "nombre": "Prueba",
-    	    "apellido": "Prueba1",
-    	    "movil": "0942985587",
-    	    "email ": "noname@noname"
+    	    "nombre": "Andres",
+    	    "apellido": "Lopez",
+    	    "movil": "+593942985587",
+    	    "email ": "alopez@gmail.com"
     	}{
             "id": "115",
-    	    "nombre": "Prueba2",
-    	    "apellido": "Prueba2",
-    	    "movil": "0942952487",
-    	    "email ": "noname@noname"
+    	    "nombre": "Juan",
+    	    "apellido": "Lopez",
+    	    "movil": "+593942952487",
+    	    "email ": "jlopez@gmail.com"
     	}],
 }]
 ```
@@ -175,55 +174,55 @@ Para obtener un listado de todos los clientes creados en el sistema se debe de h
 [
 	{
        "id": "4568",
-       "fecha_modificacion": null,
+       "fecha_modificacion": "21/06/2023",
        "razon_social": null,
        "nombre_comercial": null,
        "nombre": "Andres",
        "apellido": "Lopez",
-       "tipo_identificacion": 0,
-       "identificacion": "0999999999001",
-       "tipo_persona": 0,
+       "tipo_identificacion": "1",
+       "identificacion": "0999999999",
+       "tipo_persona": "1",
        "direccion": "Guayaquil",
 	   "contactos":
 		[{
             "id": "113",
-    	    "nombre": "Prueba",
-    	    "apellido": "Prueba1",
-    	    "movil": "0942985587",
-    	    "email ": "noname@noname"
+    	    "nombre": "Andres",
+    	    "apellido": "Lopez",
+    	    "movil": "+593942985587",
+    	    "email ": "alopez@gmail.com"
     	}{
             "id": "115",
-    	    "nombre": "Prueba2",
-    	    "apellido": "Prueba2",
-    	    "movil": "0942952487",
-    	    "email ": "noname@noname"
+    	    "nombre": "Juan",
+    	    "apellido": "Lopez",
+    	    "movil": "+593942952487",
+    	    "email ": "jlopez@gmail.com"
     	}],
  },
 	{
        "id": "4956",
-       "fecha_modificacion": null,
-       "razon_social": "razon social prueba",
-       "nombre_comercial": "nombre comercial prueba",
+       "fecha_modificacion": "21/06/2023",
+       "razon_social": "Pladsu S.A",
+       "nombre_comercial": "Pronto",
        "nombre": null,
        "apellido": null,
-       "tipo_identificacion": 0,
+       "tipo_identificacion": "2",
        "identificacion": "0999999945001",
-       "tipo_persona": 1,
+       "tipo_persona": "2",
        "direccion": "Guayaquil",
 		"contactos":
 		[{
             "id": "123",
-    	    "nombre": "Prueba",
-    	    "apellido": "Prueba1",
-    	    "movil": "0942985587",
-    	    "email ": "noname@noname"
+    	    "nombre": "Pronto",
+    	    "apellido": "Cobranzas",
+    	    "movil": "+593942985587",
+    	    "email ": "cobranzas@gmail.com"
     	}
 		{
             "id": "125",
-    	    "nombre": "Prueba2",
-    	    "apellido": "Prueba2",
-    	    "movil": "0942952487",
-    	    "email ": "noname@noname"
+    	    "nombre": "Pronto",
+    	    "apellido": "ADministración",
+    	    "movil": "+593942952487",
+    	    "email ": "administracion@gmail.com"
     	}],	
 	},...
 ```
