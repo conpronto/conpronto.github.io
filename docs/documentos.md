@@ -1,4 +1,83 @@
 # Documentos
+## Objeto Documento
+
+``` json title="Objeto Documento:"
+[{
+    "id": "7466",
+    "cliente_id": "52235",
+    "fecha_modificacion": null,
+    "fecha_emision": "13/06/2023",
+    "fecha_vencimiento": "17/10/2023",
+    "no_factura ": "001-001-000000251",
+    "no_autorizacion": "45678932598466966",
+    "subtotal_0": "0.0",
+    "impuesto": "0.0",
+    "total": "11200.0",
+    "saldo": "10000.0",
+    "cobro": 
+    [{
+	    "id": "455852",
+	    "fecha_emision": "13/06/2023",
+	    "forma_cobro": 0,
+	    "total": "11200.0"
+    }],
+    "retencion":
+    [{
+      "id": "56051",
+      "fecha_emision": "13/06/2023",
+      "valor": "100.0",
+      "numero": "001-001-000005361",
+      "autorizacion": "45678932598466966",
+      "estado": 1
+    }],
+},
+	{
+    "id": "5453",
+    "cliente_id": "54522",
+    "fecha_modificacion": null,
+    "fecha_emision": "13/05/2023",
+    "fecha_vencimiento": "17/05/2023",
+    "numero ": "001-001-000000471",
+    "numero": "456789325984646466966",
+    "subtotal": "0.0",
+    "impuesto": "0.0",
+    "total": "11200.0",
+    "saldo": "10000.0",
+    "cobro": 
+    [{
+	    "id": "455852",
+	    "fecha_emision": "13/06/2023",
+	    "forma_cobro": 0,
+	    "total": "11200.0"
+    }],
+    "retencion": 
+    [{
+      "id": "56051",
+      "fecha_emision": "13/06/2023",
+      "valor": "100.0",
+      "numero": "001-001-000005361",
+      "autorizacion": "45678932598466966",
+      "estado": 1
+    }],
+    },...
+```
+Atributos del objeto Documento:
+
+| Parámetro   | Tipo    | Longitud | Obligatorio | Descripción |
+| ----------- | ------- | -------- | ----------- | ----------- |
+| `id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
+| `cliente_id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
+| `fecha_modificacion` | date | - | Si| Fecha límite de vigencia del documento|
+| `fecha_emision ` | date | - | Si| Fecha de creación del documento|
+| `fecha_vencimiento ` | date | - | Si| Fecha límite de vigencia del documento|
+| `numero`|varchar|17|Si|Número del documento|
+| `autorizacion`|varchar|49|Si|Número de autorización del documento|
+| `subtotal`|decimal|10|Si|Representa el valor Subtotal del documento|
+| `impuesto`|decimal|10|Si|Representa el valor del impuesto del documento|
+| `total`|decimal|10|Si|Representa el valor total del documento|
+| `saldo`|decimal|10|Si|Representa el valor del saldo del documento|
+| `cobro `| objeto | - | No| Objeto contenedor del cobro del documento|
+| `retencion`|objeto|-|No|Objeto contenedor de la retención del documento|
 
 ## Crear Documento
 
@@ -35,31 +114,13 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
   }],
 }
 ```
-
-Atributos necesarios para la creación de una instancia Document:
-
-| Parámetro   | Tipo    | Longitud | Obligatorio | Descripción |
-| ----------- | ------- | -------- | ----------- | ----------- |
-| `cliente_id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
-| `fecha_emision ` | date | - | Si| Fecha de creación del documento|
-| `fecha_vencimiento ` | date | - | Si| Fecha límite de vigencia del documento|
-| `numero `|varchar|17|Si|Número del documento|
-| `autorizacion`|varchar|49|Si|Número de autorización del documento|
-| `subtotal`|decimal|10|Si|Representa el valor Subtotal del documento|
-| `impuesto`|decimal|10|Si|Representa el valor del impuesto del documento|
-| `total`|decimal|10|Si|Representa el valor total del documento|
-| `Saldo`|decimal|10|Si|Representa el valor del saldo del documento|
-| `cobro `| objeto | - | No| Objeto contenedor del cobro del documento|
-| `retencion`|objeto|-|No|Objeto contenedor de la retención del documento|
-
-
 ## Modificar Documento
 
 Este servicio permite modificar un documento creado por API.
 
 Para modificar un documento se debe hacer uso de la url:
 
-`PUT https://api.conpronto.com/v1/documento/`
+`PUT https://api.conpronto.com/documento/`
 
 Los datos que se envían al momento de la actualización son los mismos que al momento de la creación aumentando el parámetro "id" dentro del json.
 
@@ -92,28 +153,11 @@ Los datos que se envían al momento de la actualización son los mismos que al m
 }
 ``` 
 
-Atributos para la modificación de una instancia Document:
-
-| Parámetro   | Tipo    | Longitud | Obligatorio | Descripción |
-| ----------- | ------- | -------- | ----------- | ----------- |
-| `id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
-| `cliente_id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
-| `fecha_emision ` | date | - | Si| Fecha de creación del documento|
-| `fecha_vencimiento ` | date | - | Si| Fecha límite de vigencia del documento|
-| `numero `|varchar|17|Si|Número del documento|
-| `autorizacion`|varchar|49|Si|Número de autorización del documento|
-| `subtotal`|decimal|10|Si|Representa el valor Subtotal del documento|
-| `impuesto`|decimal|10|Si|Representa el valor del impuesto del documento|
-| `total`|decimal|10|Si|Representa el valor total del documento|
-| `Saldo`|decimal|10|Si|Representa el valor del saldo del documento|
-| `cobro `| objeto | - | No| Objeto contenedor del cobro del documento|
-| `retencion`|objeto|-|No|Objeto contenedor de la retención del documento|
-
 ## Obtener un Documento
 
 Para obtener un documento se debe de hacer uso de la url:
 
-`GET https://api.conpronto.com/v1/documento/<ID>`
+`GET https://api.conpronto.com/documento/<ID>`
 
 Devuelve un documento con el <ID> solicitado.
 
@@ -153,29 +197,11 @@ Respuesta al consultar un documento:
 ]
 ```
 
-Datos que devuelve al obtener un documento de una instancia Documento:
-
-| Parámetro   | Tipo    | Longitud | Obligatorio | Descripción |
-| ----------- | ------- | -------- | ----------- | ----------- |
-| `id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
-| `cliente_id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
-| `fecha_modificacion` | date | - | Si| Fecha límite de vigencia del documento|
-| `fecha_emision ` | date | - | Si| Fecha de creación del documento|
-| `fecha_vencimiento ` | date | - | Si| Fecha límite de vigencia del documento|
-| `numero`|varchar|17|Si|Número del documento|
-| `autorizacion`|varchar|49|Si|Número de autorización del documento|
-| `subtotal`|decimal|10|Si|Representa el valor Subtotal del documento|
-| `impuesto`|decimal|10|Si|Representa el valor del impuesto del documento|
-| `total`|decimal|10|Si|Representa el valor total del documento|
-| `Saldo`|decimal|10|Si|Representa el valor del saldo del documento|
-| `cobro `| objeto | - | No| Objeto contenedor del cobro del documento|
-| `retencion`|objeto|-|No|Objeto contenedor de la retención del documento|
-
 ## Obtener un listado de Documentos
 
 Para obtener todos los documentos de la cuenta hacemos uso del endpoint:
 
-`GET https://api.conpronto.com/v1/documento/`
+`GET https://api.conpronto.com/documento/`
 
 Datos que devuelve al obtener un listado de documentos:
 
@@ -240,21 +266,3 @@ Datos que devuelve al obtener un listado de documentos:
     }],
     },...
 ```
-
-Datos que devuelve al obtener un cliente de una instancia Customer:
-
-| Parámetro   | Tipo    | Longitud | Obligatorio | Descripción |
-| ----------- | ------- | -------- | ----------- | ----------- |
-| `id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
-| `cliente_id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
-| `fecha_modificacion` | date | - | Si| Fecha límite de vigencia del documento|
-| `fecha_emision ` | date | - | Si| Fecha de creación del documento|
-| `fecha_vencimiento ` | date | - | Si| Fecha límite de vigencia del documento|
-| `numero`|varchar|17|Si|Número del documento|
-| `autorizacion`|varchar|49|Si|Número de autorización del documento|
-| `subtotal`|decimal|10|Si|Representa el valor Subtotal del documento|
-| `impuesto`|decimal|10|Si|Representa el valor del impuesto del documento|
-| `total`|decimal|10|Si|Representa el valor total del documento|
-| `saldo`|decimal|10|Si|Representa el valor del saldo del documento|
-| `cobro `| objeto | - | No| Objeto contenedor del cobro del documento|
-| `retencion`|objeto|-|No|Objeto contenedor de la retención del documento|
