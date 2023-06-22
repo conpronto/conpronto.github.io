@@ -1,29 +1,29 @@
-# Contactos
+# Contacto
 
 ## Objeto Contacto
 
 ``` json title="Objeto Contacto:"
 [{
   "id": "1224",
-  "nombre": "Prueba",
-  "apellido": "Prueba1",
-  "movil": "0942985587",
-  "email ": "noname@noname"
+  "nombre": "Andrés",
+  "apellido": "López",
+  "movil": "+593942985587",
+  "email ": "alopez@gmail.co,"
 },	
 {
   "id": "12558",
-  "nombre": "Prueba",
-  "apellido": "Prueba1",
-  "movil": "0942985587",
-  "email ": "noname@noname"
+  "nombre": "Juan",
+  "apellido": "López",
+  "movil": "+593942985587",
+  "email ": "jlopez@gmail.com"
 }]
 ```
 Atributos del objeto contacto:
 
 | Parámetro   | Tipo    | Longitud | Obligatorio | Descripción |
 | ----------- | ------- | -------- | ----------- | ----------- |
-| `id`|decimal|10| Si|Identificador del cliente al que se desea agregar un contacto|
-| `cliente_id`|decimal|10| Si|Identificador del cliente al que se desea agregar un contacto|
+| `id`|varchar|10| Si|Identificador del cliente al que se desea agregar un contacto|
+| `cliente_id`|varchar|10| Si|Identificador del cliente al que se desea agregar un contacto|
 | `nombre`|varchar|200|Si|Nombre del contacto|
 | `apellido`|varchar|200|Si|Apellido del contacto|
 | `movil`|varchar|20|Si|Móvil del contacto|
@@ -40,10 +40,10 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
 ``` json title="Estructura del JSON:"
 {
   "cliente_id": "122",
-  "nombre": "Prueba",
-  "apellido": "Prueba1",
-  "movil": "0942985587",
-  "email ": "noname@noname"
+  "nombre": "Andrés",
+  "apellido": "Lopez",
+  "movil": "+593942985587",
+  "email ": "alopez@gmail.com"
 }
 
 ```
@@ -60,10 +60,10 @@ Por medio del método PUT enviando en el cuerpo del requerimiento los datos del 
 {
   "id": "1224",
   "cliente_id": "122",
-  "nombre": "Prueba",
-  "apellido": "Prueba1",
-  "movil": "0942985587",
-  "email ": "noname@noname"
+  "nombre": "Andrés",
+  "apellido": "López",
+  "movil": "+593942985587",
+  "email ": "alopez@gmail.com"
 }
 ``` 
 
@@ -77,19 +77,19 @@ Devuelve los contactos del cliente con el <ID> del cliente solicitado.
 
 ``` json title="Respuesta al consultar los contactos:"
 [
-{
-  "id": "1224",
-  "nombre": "Prueba",
-  "apellido": "Prueba1",
-  "movil": "0942985587",
-  "email ": "noname@noname"
-},	
-{
-  "id": "12558",
-  "nombre": "Prueba",
-  "apellido": "Prueba1",
-  "movil": "0942985587",
-  "email ": "noname@noname"
-}
+  {
+    "id": "1224",
+    "nombre": "Andrés",
+    "apellido": "Lopez",
+    "movil": "+593942985587",
+    "email ": "alopez@gmail.com"
+  },	
+  {
+    "id": "12558",
+    "nombre": "Juan",
+    "apellido": "Lopez",
+    "movil": "+593957235284",
+    "email ": "jlopez@gmail.com"
+  }
 ]
 ```

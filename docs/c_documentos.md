@@ -1,4 +1,4 @@
-# Documentos
+# Documento
 ## Objeto Documento
 
 ``` json title="Objeto Documento:"

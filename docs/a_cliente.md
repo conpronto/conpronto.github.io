@@ -21,7 +21,7 @@
     	    "apellido": "Lopez",
     	    "movil": "+593942985587",
     	    "email ": "alopez@gmail.com"
-    	}
+    	},
 		{
             "id": "115",
     	    "nombre": "Juan",
@@ -50,15 +50,15 @@ Los tipos de persona son:
 
 | Parámetro   | Tipo    | Longitud | Descripción |
 | ----------- | ------- | -------- | ----------- |
-| `id`|decimal|10|Identificador del cliente en el sistema|
+| `id`|varchar|10|Identificador del cliente en el sistema|
 | `fecha_modificacion`|date||Última fecha en la que se modificó el cliente|
 | `razon_social`|varchar|200|Razón social del cliente tipo empresa|
 | `nombre_comercial `|varchar|200|Nombre comercial del cliente tipo empresa|
 | `nombre`|varchar|200|Nombre cliente tipo persona|
 | `apellido`|varchar|200|Apellido cliente tipo persona|
-| `tipo_identificacion`|decimal|1|Tipo de identificación del cliente|
+| `tipo_identificacion`|varchar|1|Tipo de identificación del cliente|
 | `identificacion`|varchar|15|Número de cédula o ruc del cliente|
-| `tipo_persona`|decimal|1|Tipo de persona del cliente (Persona o Empresa)|
+| `tipo_persona`|varchar|1|Tipo de persona del cliente (Persona o Empresa)|
 | `direccion`|varchar|200|Dirección del cliente|
 | `contacto`|objeto|-|Si|Objeto contenedor del contacto del cliente|
 
@@ -154,7 +154,8 @@ Devuelve un cliente con el <ID> solicitado.
     	    "apellido": "Lopez",
     	    "movil": "+593942985587",
     	    "email ": "alopez@gmail.com"
-    	}{
+    	},
+		{
             "id": "115",
     	    "nombre": "Juan",
     	    "apellido": "Lopez",
@@ -190,7 +191,8 @@ Para obtener un listado de todos los clientes creados en el sistema se debe de h
     	    "apellido": "Lopez",
     	    "movil": "+593942985587",
     	    "email ": "alopez@gmail.com"
-    	}{
+    	},
+		{
             "id": "115",
     	    "nombre": "Juan",
     	    "apellido": "Lopez",
@@ -198,7 +200,7 @@ Para obtener un listado de todos los clientes creados en el sistema se debe de h
     	    "email ": "jlopez@gmail.com"
     	}],
  },
-	{
+ {
        "id": "4956",
        "fecha_modificacion": "21/06/2023",
        "razon_social": "Pladsu S.A",
@@ -216,7 +218,7 @@ Para obtener un listado de todos los clientes creados en el sistema se debe de h
     	    "apellido": "Cobranzas",
     	    "movil": "+593942985587",
     	    "email ": "cobranzas@gmail.com"
-    	}
+    	},
 		{
             "id": "125",
     	    "nombre": "Pronto",
@@ -224,5 +226,5 @@ Para obtener un listado de todos los clientes creados en el sistema se debe de h
     	    "movil": "+593942952487",
     	    "email ": "administracion@gmail.com"
     	}],	
-	},...
+ },...
 ```

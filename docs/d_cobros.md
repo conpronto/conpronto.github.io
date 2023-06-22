@@ -1,4 +1,4 @@
-# Cobros
+# Cobro
 
 ## Objeto Cobro
 
@@ -46,7 +46,7 @@ Los tipos de cobros soportados vía API son:
 
 Para crear un cobro se debe de hacer uso de la url:
 
-`POST https://api.contifico.com/documento/<ID>/cobro/`
+`POST https://api.conpronto.com/documento/<ID>/cobro/`
 
 Cambiando el parámetro por el id del documento (devuelto al momento de crear el documento).
 

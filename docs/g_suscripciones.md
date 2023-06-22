@@ -1,4 +1,4 @@
-# Suscripciones
+# Suscripción
 ## Objeto Suscripción
 
 ``` json title="Objeto Suscripción:"
@@ -21,8 +21,8 @@ Los estados de la suscripción son:
 
 | Valor       | Tipo                                 |
 | ----------- | ------------------------------------ |
-| `1  `       | Activo                               |
-| `2  `       | Inactivo|
+| `A  `       | Activo                               |
+| `I  `       | Inactivo|
 
 Los valores de recurrencia en la suscripción son:
 
@@ -35,20 +35,20 @@ Los valores de recurrencia en la suscripción son:
 
 | Parámetro   | Tipo    | Longitud | Descripción |
 | ----------- | ------- | -------- | ----------- |
-| `id`|decimal|10|Identificador de la suscripción en el sistema|
-| `cliente_id`|decimal|10|Identificador del cliente al que pertenece la suscripción en el sistema|
-| `contrato_id`|decimal|10|Identificador del contrato del cliente en el sistema |
+| `id`|varchar|10|Identificador de la suscripción en el sistema|
+| `cliente_id`|varchar|10|Identificador del cliente al que pertenece la suscripción en el sistema|
+| `contrato_id`|varchar|10|Identificador del contrato del cliente en el sistema |
 | `fecha_inicio`|date|-|Fecha de inicio de la suscripción|
-| `recurrente`|decimal|10|Recurrencia de la suscripción|
+| `recurrente`|varchar|10|Recurrencia de la suscripción|
 | `valor`|decimal|50|Valor de la suscripción|
 | `impuesto`|decimal|50|Valor del impuesto de la suscripción|
-| `estado`|decimal|10|Activo, Inactivo|
+| `estado`|varchar|1|Activo, Inactivo|
 
 ## Crear Suscripción (POST)
 
 Para crear una sucripción se debe de hacer uso de la url:
 
-`POST https://api.contifico.com/documento/<ID>/suscripcion/`
+`POST https://api.conpronto.com/cliente/<ID>/suscripcion/`
 
 Cambiando el parámetro por el id del cliente (devuelto al momento de crear el cliente).
 
@@ -105,11 +105,11 @@ Devuelve una suscripción con el <ID> solicitado.
    }
 ]
 ```
-## Obtener un listado de Suscripciones (GET)
+## Obtener un listado de Suscripciones por cliente (GET)
 
 Para obtener un listado de todos las Suscripciones creadas en el sistema se debe de hacer uso de la url:
 
-`GET https://api.conpronto.com/suscripcion/`
+`GET https://api.conpronto.com/cliente/<ID>/suscripcion/`
 
 ``` json title="Respuesta al consultar un listado de Suscripciones:"
 [
@@ -123,7 +123,7 @@ Para obtener un listado de todos las Suscripciones creadas en el sistema se debe
        "impuesto": "12.0",
        "estado": "1",
    },
-      {
+   {
        "id": "45215",
        "cliente_id": "78523",
        "contrato_id": "72358",

@@ -1,4 +1,4 @@
-# Notificaciones
+# Notificación
 
 ## Objeto Notificaciones
 
