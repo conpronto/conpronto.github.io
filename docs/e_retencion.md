@@ -1,4 +1,4 @@
-# Retenciones
+# Retención
 
 ## Objeto Retención
 ``` json title="Objeto Retención:"
