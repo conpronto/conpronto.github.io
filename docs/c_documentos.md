@@ -5,7 +5,7 @@
 [{
     "id": "7466",
     "cliente_id": "52235",
-    "fecha_modificacion": null,
+    "fecha_modificacion": "22/06/2023",
     "fecha_emision": "13/06/2023",
     "fecha_vencimiento": "17/10/2023",
     "no_factura ": "001-001-000000251",
@@ -18,7 +18,7 @@
     [{
 	    "id": "455852",
 	    "fecha_emision": "13/06/2023",
-	    "forma_cobro": 0,
+	    "tipo_cobro": "EF",
 	    "total": "11200.0"
     }],
     "retencion":
@@ -28,13 +28,13 @@
       "valor": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
-      "estado": 1
+      "estado": "1"
     }],
-},
-	{
+ },
+ {
     "id": "5453",
     "cliente_id": "54522",
-    "fecha_modificacion": null,
+    "fecha_modificacion": "22/06/2023",
     "fecha_emision": "13/05/2023",
     "fecha_vencimiento": "17/05/2023",
     "numero ": "001-001-000000471",
@@ -47,7 +47,7 @@
     [{
 	    "id": "455852",
 	    "fecha_emision": "13/06/2023",
-	    "forma_cobro": 0,
+	    "tipo_cobro": "EF",
 	    "total": "11200.0"
     }],
     "retencion": 
@@ -57,16 +57,18 @@
       "valor": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
-      "estado": 1
+      "estado": "1"
     }],
-    },...
+ },
+ ...
+]
 ```
 Atributos del objeto Documento:
 
 | Parámetro   | Tipo    | Longitud | Obligatorio | Descripción |
 | ----------- | ------- | -------- | ----------- | ----------- |
-| `id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
-| `cliente_id` | decimal | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
+| `id` | varchar | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
+| `cliente_id` | varchar | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
 | `fecha_modificacion` | date | - | Si| Fecha límite de vigencia del documento|
 | `fecha_emision ` | date | - | Si| Fecha de creación del documento|
 | `fecha_vencimiento ` | date | - | Si| Fecha límite de vigencia del documento|
@@ -101,8 +103,8 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
   "cobro":
   [{
 	    "fecha_emision": "13/06/2023",
-	    "forma_cobro": 0,
-	    "total": "11200.0",
+	    "tipo_cobro": "EF",
+	    "total": "11200.0"
   }],
   "retencion":
   [{
@@ -110,7 +112,7 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
       "valor": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
-      "estado": 1,
+      "estado": "1"
   }],
 }
 ```
@@ -127,7 +129,7 @@ Los datos que se envían al momento de la actualización son los mismos que al m
 ``` json title="Estructura del JSON:"
 {
 	"id": "7856",
-	"cliente_id": "pKBe1Eqk8f6zeXyO",
+	"cliente_id": "45248",
 	"fecha_emision": "13/06/2023",
 	"fecha_vencimiento": "17/10/2023",
 	"numero ": "001-001-000000251",
@@ -139,8 +141,8 @@ Los datos que se envían al momento de la actualización son los mismos que al m
   "cobro": 
   [{
 	    "fecha_emision": "13/06/2023",
-	    "forma_cobro": 0,
-	    "total": "11200.0",
+	    "tipo_cobro": "EF",
+	    "total": "11200.0"
   }],
   "retencion": 
   [{
@@ -148,7 +150,7 @@ Los datos que se envían al momento de la actualización son los mismos que al m
       "valor": "100.0",
       "numero ": "001-001-000005361",
       "autorizacion": "45678932598466966",
-      "estado": 1,
+      "estado": "1"
   }],
 }
 ``` 
@@ -168,7 +170,7 @@ Respuesta al consultar un documento:
   {
     "id": "7466",
     "cliente_id": "52235",
-    "fecha_modificacion": null,
+    "fecha_modificacion": "22/06/2023",
     "fecha_emision": "13/06/2023",
     "fecha_vencimiento": "17/10/2023",
     "numero": "001-001-000000251",
@@ -181,8 +183,8 @@ Respuesta al consultar un documento:
     [{
 	    "id": "7466",
 	    "fecha_emision": "13/06/2023",
-	    "forma_cobro": 0,
-	    "total": "11200.0",
+	    "tipo_cobro": "EF",
+	    "total": "11200.0"
     }],
       "retencion": 
     [{
@@ -191,7 +193,7 @@ Respuesta al consultar un documento:
       "valor": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
-      "estado": 1,
+      "estado": "1"
     }],
   }
 ]
@@ -207,10 +209,10 @@ Datos que devuelve al obtener un listado de documentos:
 
 ``` json title="Respuesta al consultar todos los documentos:"
 [
-{
+ { 
     "id": "7466",
     "cliente_id": "52235",
-    "fecha_modificacion": null,
+    "fecha_modificacion": "22/06/2023",
     "fecha_emision": "13/06/2023",
     "fecha_vencimiento": "17/10/2023",
     "no_factura ": "001-001-000000251",
@@ -223,7 +225,7 @@ Datos que devuelve al obtener un listado de documentos:
     [{
 	    "id": "455852",
 	    "fecha_emision": "13/06/2023",
-	    "forma_cobro": 0,
+	    "tipo_cobro": "EF",
 	    "total": "11200.0"
     }],
     "retencion":
@@ -233,13 +235,13 @@ Datos que devuelve al obtener un listado de documentos:
       "valor": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
-      "estado": 1
+      "estado": "1"
     }],
-},
-	{
+ },
+ {
     "id": "5453",
     "cliente_id": "54522",
-    "fecha_modificacion": null,
+    "fecha_modificacion": "22/06/2023",
     "fecha_emision": "13/05/2023",
     "fecha_vencimiento": "17/05/2023",
     "numero ": "001-001-000000471",
@@ -252,7 +254,7 @@ Datos que devuelve al obtener un listado de documentos:
     [{
 	    "id": "455852",
 	    "fecha_emision": "13/06/2023",
-	    "forma_cobro": 0,
+	    "tipo_cobro": "EF",
 	    "total": "11200.0"
     }],
     "retencion": 
@@ -262,7 +264,9 @@ Datos que devuelve al obtener un listado de documentos:
       "valor": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
-      "estado": 1
+      "estado": "1"
     }],
-    },...
+ },
+ ...
+] 
 ```

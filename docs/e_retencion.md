@@ -6,22 +6,22 @@
     {
        "id": "54222",
        "id_documento": "54244",
-       "fecha_modificacion": null,
+       "fecha_modificacion": "22/06/2023",
        "fecha_emision": "13/06/2023",
        "valor": "100.0",
        "no_retencion ": "001-001-000005361",
        "no_autorizacion": "45678932598466966",
-       "estado": 1,
+       "estado": "1"
 	},
 	{
        "id": "85682",
        "id_documento": "8824",
-       "fecha_modificacion": null,
+       "fecha_modificacion": "22/06/2023",
        "fecha_emision": "13/06/2023",
        "valor": "100.0",
        "no_retencion ": "001-001-000005361",
        "no_autorizacion": "45678932598466966",
-       "estado": 1,
+       "estado": "1"
 	},
 ]...
 ```
@@ -31,19 +31,19 @@ Los estados de la retención son:
 
 | Valor       | Tipo                                 |
 | ----------- | ------------------------------------ |
-| `0  `       | Activo                               |
-| `1  `       | Anulado|
+| `1  `       | Activo                               |
+| `0  `       | Anulado|
 
 | Parámetro   | Tipo    | Longitud | Descripción |
 | ----------- | ------- | -------- | ----------- |
-| `id`|decimal|1|Identificador de la retención|
-| `id_documento`|decimal|1|Identificador del documento al que pertenece la retención en el sistema|
+| `id`|varchar|1|Identificador de la retención|
+| `id_documento`|varchar|1|Identificador del documento al que pertenece la retención en el sistema|
 | `fecha_emision`| date  |-|Fecha que se realiza la transacción|
 | `fecha_modificacion`| date  |-|Última fecha en la que se modificó|
 | `valor`|decimal|1|Valor de la retención|
 | `no_retencion`|varchar|50|Número de retención|
 | `no_autorización`|varchar|49|Número de la retención|
-| `estado`|decimal|1|Activo, anulado|
+| `estado`|varchar|1|Activo, anulado|
 
 ## Crear una retención
 
@@ -61,7 +61,7 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
        "valor": "100.0",
        "no_retencion ": "001-001-000005361",
        "no_autorizacion": "45678932598466966",
-       "estado": 1,
+       "estado": "1"
     }
 ]
 ```
@@ -84,7 +84,7 @@ Los datos que se envían al momento de la actualización son los mismos que al m
        "valor": "100.0",
        "no_retencion ": "001-001-000005361",
        "no_autorizacion": "45678932598466966",
-       "estado": 1,
+       "estado": "1"
     }
 ]
 ```
@@ -100,12 +100,12 @@ Devuelve una retención con el `<ID>` solicitado.
     {
        "id": "5452",
        "id_documento": "4454",
-       "fecha_modificacion": null,
+       "fecha_modificacion": "22/06/2023",
        "fecha_emision": "13/06/2023",
        "valor": "100.0",
        "no_retencion ": "001-001-000005361",
        "no_autorizacion": "45678932598466966",
-       "estado": 1,
+       "estado": "1"
     }
 ]
 ```
@@ -122,22 +122,22 @@ Respuesta al consultar un listado de retenciones:
     {
        "id": "54222",
        "id_documento": "54244",
-       "fecha_modificacion": null,
+       "fecha_modificacion": "22/06/2023",
        "fecha_emision": "13/06/2023",
        "valor": "100.0",
        "no_retencion ": "001-001-000005361",
        "no_autorizacion": "45678932598466966",
-       "estado": 1,
+       "estado": "1"
 	},
 	{
        "id": "85682",
        "id_documento": "8824",
-       "fecha_modificacion": null,
+       "fecha_modificacion": "22/06/2023",
        "fecha_emision": "13/06/2023",
        "valor": "100.0",
        "no_retencion ": "001-001-000005361",
        "no_autorizacion": "45678932598466966",
-       "estado": 1,
+       "estado": "1"
 	},
 ]...
 ```

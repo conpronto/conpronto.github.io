@@ -8,7 +8,9 @@ https://api.conpronto.com/
 ```
 ## Autenticación
 
-Pronto utiliza una clave de acceso, conocida como API Key, para acceder a sus servicios. Para obtenerla, es necesario tener una cuenta en Pronto y solicitarla a través del servicio de atención al cliente. Esta clave debe ser incluida y enviada como un parámetro en el encabezado de autenticación (AUTHORIZATION) en cada llamada al servicio que se utilice.
+Pronto utiliza una clave de acceso, conocida como API Key, para acceder a sus servicios. Para obtenerla, es necesario tener una cuenta en Pronto y solicitarla a través del servicio de atención al cliente. 
+
+Esta clave debe ser incluida y enviada como un parámetro en el encabezado de autenticación (AUTHORIZATION) en cada llamada al servicio que se utilice.
 
 La API Key es el identificador único de tu Organización. Tiene la siguiente forma:
 ``` html title="API Key:"
@@ -72,7 +74,7 @@ Las siguientes son url's válidas para uso del api:
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
-| `https://api.contifico.com/documento/<ID>/cobro/`| POST |
+| `https://api.conpronto.com/documento/<ID>/cobro/`| POST |
 | `https://api.conpronto.com/documento/<ID>/cobro/`| GET |
 | `https://api.conpronto.com/cobro/datafast/`| GET |
 | `https://api.conpronto.com/cobro/payphone/`| GET |
@@ -97,7 +99,7 @@ Las siguientes son url's válidas para uso del api:
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
-| `https://api.contifico.com/documento/<ID>/suscripcion/`| POST |
+| `https://api.conpronto.com/cliente/<ID>/suscripcion/`| POST |
 | `https://api.conpronto.com/suscripcion/`| PUT |
 | `https://api.conpronto.com/suscripcion/<ID>/`| GET |
-| `https://api.conpronto.com/suscripcion/`| GET |
+| `https://api.conpronto.com/cliente/<ID>/suscripcion/`| GET |

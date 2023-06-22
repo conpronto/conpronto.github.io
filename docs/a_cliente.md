@@ -37,16 +37,16 @@ Los tipos de identificación son:
 
 | Valor       | Tipo                                 |
 | ----------- | ------------------------------------ |
-| `1  `       | Cédula                               |
-| `2  `       | Ruc|
-| `3  `       | Pasaporte |
+| `1 `       | Cédula                               |
+| `2 `       | Ruc|
+| `3 `       | Pasaporte |
 
 Los tipos de persona son:
 
 | Valor       | Tipo                                 |
 | ----------- | ------------------------------------ |
-| `1  `       | Persona                            |
-| `2  `       | Empresa|
+| `1 `       | Persona                            |
+| `2 `       | Empresa|
 
 | Parámetro   | Tipo    | Longitud | Descripción |
 | ----------- | ------- | -------- | ----------- |
