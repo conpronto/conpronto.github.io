@@ -81,7 +81,7 @@ Atributos del objeto Documento:
 | `cobro `| objeto | - | No| Objeto contenedor del cobro del documento|
 | `retencion`|objeto|-|No|Objeto contenedor de la retención del documento|
 
-## Crear Documento
+## Crear Documento (POST)
 
 Para crear un documento se debe de hacer uso de la url:
 
@@ -116,7 +116,7 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
   }],
 }
 ```
-## Modificar Documento
+## Modificar Documento (PUT)
 
 Este servicio permite modificar un documento creado por API.
 
@@ -155,7 +155,7 @@ Los datos que se envían al momento de la actualización son los mismos que al m
 }
 ``` 
 
-## Obtener un Documento
+## Obtener un Documento (GET)
 
 Para obtener un documento se debe de hacer uso de la url:
 
@@ -199,7 +199,7 @@ Respuesta al consultar un documento:
 ]
 ```
 
-## Obtener un listado de Documentos
+## Obtener un listado de Documentos (GET)
 
 Para obtener todos los documentos de la cuenta hacemos uso del endpoint:
 

@@ -86,7 +86,7 @@ Atributos de un objeto Notificaciones:
 | `fecha_actualizacion`|date|-|Fecha de la actualización del estado del mensaje|
 | `estado`|varchar|20|Estado de la notificación, leído, entregado, error|
 
-## Obtener un listado de notificaciones por rango de fechas
+## Obtener un listado de notificaciones por rango de fechas (GET)
 
 Se puede obtener una lista de todas las notificaciones enviadas por rango de fecha.
 
@@ -157,7 +157,7 @@ Se puede obtener una lista de todas las notificaciones enviadas por rango de fec
 ],...
 ```
 
-## Obtener un listado de mensajes por cliente
+## Obtener un listado de mensajes por cliente (GET)
 
 `GET https://api.conpronto.com/cliente/<ID>/notificacion`
 

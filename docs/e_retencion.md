@@ -45,7 +45,7 @@ Los estados de la retención son:
 | `no_autorización`|varchar|49|Número de la retención|
 | `estado`|varchar|1|Activo, anulado|
 
-## Crear una retención
+## Crear una retención (POST)
 
 Para crear un retención se debe de hacer uso de la url:
 
@@ -65,7 +65,7 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
     }
 ]
 ```
-## Modificar una retención
+## Modificar una retención (PUT)
 
 Este servicio permite modificar una retención creada por API.
 
@@ -89,7 +89,7 @@ Los datos que se envían al momento de la actualización son los mismos que al m
 ]
 ```
 
-## Obtener una retención
+## Obtener una retención (GET)
 
 `GET https://api.conpronto.com/documento/<ID>`
 
@@ -109,7 +109,7 @@ Devuelve una retención con el `<ID>` solicitado.
     }
 ]
 ```
-## Obtener un listado de retenciones
+## Obtener un listado de retenciones (GET)
 
 Obtener una lista de todas las retenciones ingresadas en el sistema.
 

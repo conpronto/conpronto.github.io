@@ -7,7 +7,7 @@
    {
 	"id": "7423",
 	"documento_id": "1234",
-    "payment_brand": “VISA”,
+    "payment_brand": "MASTERCARD",
 	"fecha_emision": "13/06/2023 13:21:01",
 	"tipo_cobro": "TC",
 	"total": "1100.0"
@@ -42,7 +42,7 @@ Los tipos de cobros soportados vía API son:
 | `tipo_cobro`|varchar|10| Tipo de cobro: (Efectivo, Transferencia, Tarjeta Crédito, Cheque, Cruce de Documento)|
 | `total` |decimal|10|Valor total del cobro|
 
-## Crear Cobros
+## Crear Cobros (POST)
 
 Para crear un cobro se debe de hacer uso de la url:
 
@@ -59,7 +59,7 @@ Cambiando el parámetro por el id del documento (devuelto al momento de crear el
 }
 ```
 
-## Obtener Cobros
+## Obtener Cobros (GET)
 
 Podemos consultar los cobros que tiene un documento por medio de la url:
 
@@ -80,7 +80,7 @@ Usando el id devuelto en la creación de documento.
 ]
 ``` 
 
-## Obtener cobros realizados por Datafast o Payphone
+## Obtener cobros realizados por Datafast o Payphone (GET)
 
 Podemos consultar los cobros realizados por Datafast o Payphone por medio de la url:
 
@@ -93,7 +93,7 @@ Podemos consultar los cobros realizados por Datafast o Payphone por medio de la 
    {
 	"id": "7423",
 	"documento_id": "1234",
-    "payment_brand": “VISA”,
+    "payment_brand": "VISA",
 	"fecha_emision": "13/06/2023 13:21:01",
 	"tipo_cobro": "TC",
 	"total": "1100.0"
@@ -101,7 +101,7 @@ Podemos consultar los cobros realizados por Datafast o Payphone por medio de la 
    {
 	"id": "7425",
 	"documento_id": "1238",
-    "payment_brand": “MASTERCARD”,
+    "payment_brand": "MASTERCARD",
 	"fecha_emision": "21/06/2023 13:23:01",
 	"tipo_cobro": "TC",
 	"total": "1283.0"

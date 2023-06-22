@@ -29,7 +29,7 @@ Atributos del objeto contacto:
 | `movil`|varchar|20|Si|Móvil del contacto|
 | `email`|varchar|200|Si|Email del contacto|
 
-## Crear Contacto
+## Crear Contacto (POST)
 
 Este servicio permite agregar un nuevo contacto. Para crear un contacto se debe hacer uso de la url:
 
@@ -48,7 +48,7 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
 
 ```
 
-## Modificar Contacto
+## Modificar Contacto (PUT)
 
 Para modificar un contacto se debe de hacer uso de la url:
 
@@ -67,7 +67,7 @@ Por medio del método PUT enviando en el cuerpo del requerimiento los datos del 
 }
 ``` 
 
-## Obtener Contacto
+## Obtener Contacto (GET)
 
 Para obtener un listado de todos los contactos de un cliente se debe de hacer uso de la url:
 
