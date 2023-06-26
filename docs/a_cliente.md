@@ -86,7 +86,7 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
     	   "nombre": "Andres",
     	   "apellido": "Lopez",
     	   "movil": "+593942985587",
-    	   "email": "noname@noname"
+    	   "email": "alopez@gmail.com"
     	}]
 }
 ```

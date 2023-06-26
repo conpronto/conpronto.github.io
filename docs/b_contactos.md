@@ -8,7 +8,7 @@
   "nombre": "Andrés",
   "apellido": "López",
   "movil": "+593942985587",
-  "email ": "alopez@gmail.co,"
+  "email ": "alopez@gmail.com"
 },	
 {
   "id": "12558",

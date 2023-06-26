@@ -53,15 +53,15 @@ Las siguientes son url's válidas para uso del api:
 | `https://api.conpronto.com/cliente/`| GET |
 | `https://api.conpronto.com/cliente/<ID>/`| GET |
 
-### Url's de contactos
+### Url's de contacto
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
-| `https://api.conpronto.com/contacto/`| POST |
+| `https://api.conpronto.com/cliente/<ID>/contacto/`| POST |
 | `https://api.conpronto.com/contacto/`| PUT |
 | `https://api.conpronto.com/cliente/<ID>/contacto/`| GET |
 
-### Url's de documentos
+### Url's de documento
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
@@ -70,7 +70,7 @@ Las siguientes son url's válidas para uso del api:
 | `https://api.conpronto.com/documento/<ID>`| GET |
 | `https://api.conpronto.com/documento/`| GET |
 
-### Url's de cobros
+### Url's de cobro
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
@@ -79,7 +79,7 @@ Las siguientes son url's válidas para uso del api:
 | `https://api.conpronto.com/cobro/datafast/`| GET |
 | `https://api.conpronto.com/cobro/payphone/`| GET |
 
-### Url's de retencion
+### Url's de retención
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
@@ -88,14 +88,14 @@ Las siguientes son url's válidas para uso del api:
 | `https://api.conpronto.com/documento/<ID>`| GET |
 | `https://api.conpronto.com/documento/`| GET |
 
-### Url's de notificaciones
+### Url's de notificación
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
 | `https://api.conpronto.com/notificacion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`| GET |
 | `https://api.conpronto.com/cliente/<ID>/notificacion`| GET |
 
-### Url's de suscripciones
+### Url's de suscripción
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |

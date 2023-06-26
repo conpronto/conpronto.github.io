@@ -5,76 +5,57 @@
 [{
     "id": "7466",
     "cliente_id": "52235",
+    "suscripcion_id": "74135",
     "fecha_modificacion": "22/06/2023",
     "fecha_emision": "13/06/2023",
     "fecha_vencimiento": "17/10/2023",
-    "no_factura ": "001-001-000000251",
-    "no_autorizacion": "45678932598466966",
-    "subtotal_0": "0.0",
+    "factura": "001-001-000000251",
+    "autorizacion": "45678932598466966",
+    "estado": "1",
+    "descripcion": "Venta por web",    
     "impuesto": "0.0",
     "total": "11200.0",
-    "saldo": "10000.0",
+    "saldo": "9900.0",
     "cobro": 
     [{
 	    "id": "455852",
 	    "fecha_emision": "13/06/2023",
 	    "tipo_cobro": "EF",
-	    "total": "11200.0"
+	    "total": "1200.0"
     }],
     "retencion":
     [{
       "id": "56051",
       "fecha_emision": "13/06/2023",
-      "valor": "100.0",
+      "total": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
       "estado": "1"
-    }],
- },
- {
-    "id": "5453",
-    "cliente_id": "54522",
-    "fecha_modificacion": "22/06/2023",
-    "fecha_emision": "13/05/2023",
-    "fecha_vencimiento": "17/05/2023",
-    "numero ": "001-001-000000471",
-    "numero": "456789325984646466966",
-    "subtotal": "0.0",
-    "impuesto": "0.0",
-    "total": "11200.0",
-    "saldo": "10000.0",
-    "cobro": 
-    [{
-	    "id": "455852",
-	    "fecha_emision": "13/06/2023",
-	    "tipo_cobro": "EF",
-	    "total": "11200.0"
-    }],
-    "retencion": 
-    [{
-      "id": "56051",
-      "fecha_emision": "13/06/2023",
-      "valor": "100.0",
-      "numero": "001-001-000005361",
-      "autorizacion": "45678932598466966",
-      "estado": "1"
-    }],
- },
- ...
-]
+    }]
+}]
+ 
 ```
+Los estados de documento son:
+
+| Valor       | Tipo                                 |
+| ----------- | ------------------------------------ |
+| `1  `       | Activo                               |
+| `0  `       | Anulado|
+
 Atributos del objeto Documento:
 
 | Parámetro   | Tipo    | Longitud | Obligatorio | Descripción |
 | ----------- | ------- | -------- | ----------- | ----------- |
 | `id` | varchar | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
 | `cliente_id` | varchar | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
+| `suscripcion_id` | varchar | 10 | Si | Identificador de la suscripción al que pertenece el documento en el sistema|
 | `fecha_modificacion` | date | - | Si| Fecha límite de vigencia del documento|
 | `fecha_emision ` | date | - | Si| Fecha de creación del documento|
 | `fecha_vencimiento ` | date | - | Si| Fecha límite de vigencia del documento|
 | `numero`|varchar|17|Si|Número del documento|
 | `autorizacion`|varchar|49|Si|Número de autorización del documento|
-| `subtotal`|decimal|10|Si|Representa el valor Subtotal del documento|
+| `estado`|varchar|10|Si|Representa el estado del documento (Activo o Anulado)|
+| `descripcion`|varchar|100|Si|Representa la descripción del documento|
 | `impuesto`|decimal|10|Si|Representa el valor del impuesto del documento|
 | `total`|decimal|10|Si|Representa el valor total del documento|
 | `saldo`|decimal|10|Si|Representa el valor del saldo del documento|
@@ -91,29 +72,31 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
 
 ``` json title="Estructura del JSON:"
  {
-	"cliente_id": "5662",
-	"fecha_emision": "13/06/2023",
-	"fecha_vencimiento": "17/07/2023",
-	"numero": "001-002-000000451",
-	"autorizacion": "565645678932448598466966",
-	"subtotal": "0.0",
-	"impuesto": "0.0",
-	"total": "11200.0",
-	"saldo": "10000.0",
-  "cobro":
-  [{
+    "cliente_id": "5662",
+    "suscripcion_id": "74135",
+    "fecha_emision": "13/06/2023",
+    "fecha_vencimiento": "17/07/2023",
+    "factura": "001-002-000000451",
+    "autorizacion": "565645678932448598466966",
+    "estado": "1",
+    "descripcion": "Venta por web",      
+    "impuesto": "0.0",
+    "total": "11200.0",
+    "saldo": "9900.0",
+    "cobro":
+    [{
 	    "fecha_emision": "13/06/2023",
 	    "tipo_cobro": "EF",
-	    "total": "11200.0"
-  }],
-  "retencion":
-  [{
+	    "total": "1200.0"
+    }],
+    "retencion":
+    [{
       "fecha_emision": "13/06/2023",
-      "valor": "100.0",
+      "total": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
       "estado": "1"
-  }],
+    }],
 }
 ```
 ## Modificar Documento (PUT)
@@ -128,30 +111,32 @@ Los datos que se envían al momento de la actualización son los mismos que al m
 
 ``` json title="Estructura del JSON:"
 {
-	"id": "7856",
-	"cliente_id": "45248",
-	"fecha_emision": "13/06/2023",
-	"fecha_vencimiento": "17/10/2023",
-	"numero ": "001-001-000000251",
-	"autorizacion": "45678932598466966",
-	"subtotal": "0.0",
-	"impuesto": "0.0",
-	"total": "11200.0",
-	"saldo": "10000.0",
-  "cobro": 
-  [{
+    "id": "7856",
+    "cliente_id": "45248",
+    "suscripcion_id": "74135",
+    "fecha_emision": "13/06/2023",
+    "fecha_vencimiento": "17/10/2023",
+    "numero ": "001-001-000000251",
+    "autorizacion": "45678932598466966",
+    "estado": "1",
+    "descripcion": "Venta por web",  
+    "impuesto": "0.0",
+    "total": "11200.0",
+    "saldo": "9900.0",
+    "cobro": 
+    [{
 	    "fecha_emision": "13/06/2023",
 	    "tipo_cobro": "EF",
-	    "total": "11200.0"
-  }],
-  "retencion": 
-  [{
+	    "total": "1200.0"
+    }],
+    "retencion": 
+    [{
       "fecha_emision": "13/06/2023",
-      "valor": "100.0",
+      "total": "100.0",
       "numero ": "001-001-000005361",
       "autorizacion": "45678932598466966",
       "estado": "1"
-  }],
+    }],
 }
 ``` 
 
@@ -166,37 +151,35 @@ Devuelve un documento con el <ID> solicitado.
 Respuesta al consultar un documento:
 
 ``` json title="Respuesta al consultar un documento:"
-[
-  {
-    "id": "7466",
-    "cliente_id": "52235",
-    "fecha_modificacion": "22/06/2023",
+[{
+    "id": "7856",
+    "cliente_id": "45248",
+    "suscripcion_id": "74135",
     "fecha_emision": "13/06/2023",
     "fecha_vencimiento": "17/10/2023",
-    "numero": "001-001-000000251",
+    "numero ": "001-001-000000251",
     "autorizacion": "45678932598466966",
-    "subtotal": "0.0",
+    "estado": "1",
+    "descripcion": "Venta por web",  
     "impuesto": "0.0",
     "total": "11200.0",
-    "saldo": "10000.0",
-    "cobro": 
+    "saldo": "9900.0",
     [{
 	    "id": "7466",
 	    "fecha_emision": "13/06/2023",
 	    "tipo_cobro": "EF",
-	    "total": "11200.0"
+	    "total": "1200.0"
     }],
       "retencion": 
     [{
       "id": "7466",
       "fecha_emision": "13/06/2023",
-      "valor": "100.0",
+      "total": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
       "estado": "1"
     }],
-  }
-]
+  }]
 ```
 
 ## Obtener un listado de Documentos (GET)
@@ -208,31 +191,32 @@ Para obtener todos los documentos de la cuenta hacemos uso del endpoint:
 Datos que devuelve al obtener un listado de documentos:
 
 ``` json title="Respuesta al consultar todos los documentos:"
-[
- { 
+[{ 
     "id": "7466",
     "cliente_id": "52235",
+    "suscripcion:id": "74135",
     "fecha_modificacion": "22/06/2023",
     "fecha_emision": "13/06/2023",
     "fecha_vencimiento": "17/10/2023",
-    "no_factura ": "001-001-000000251",
-    "no_autorizacion": "45678932598466966",
-    "subtotal_0": "0.0",
+    "factura ": "001-001-000000251",
+    "autorizacion": "45678932598466966",
+    "estado": "1",
+    "descripcion": "Venta por web",  
     "impuesto": "0.0",
     "total": "11200.0",
-    "saldo": "10000.0",
+    "saldo": "9900.0",
     "cobro": 
     [{
 	    "id": "455852",
 	    "fecha_emision": "13/06/2023",
 	    "tipo_cobro": "EF",
-	    "total": "11200.0"
+	    "total": "1200.0"
     }],
     "retencion":
     [{
       "id": "56051",
       "fecha_emision": "13/06/2023",
-      "valor": "100.0",
+      "total": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
       "estado": "1"
@@ -241,27 +225,29 @@ Datos que devuelve al obtener un listado de documentos:
  {
     "id": "5453",
     "cliente_id": "54522",
+    "suscripcion_id": "325698",
     "fecha_modificacion": "22/06/2023",
     "fecha_emision": "13/05/2023",
     "fecha_vencimiento": "17/05/2023",
-    "numero ": "001-001-000000471",
-    "numero": "456789325984646466966",
-    "subtotal": "0.0",
+    "factura ": "001-001-000000471",
+    "autorizacion": "456789325984646466966",
+    "estado": "1",
+    "descripcion": "Venta al por mayor",
     "impuesto": "0.0",
-    "total": "11200.0",
-    "saldo": "10000.0",
+    "total": "2000.0",
+    "saldo": "1000.0",
     "cobro": 
     [{
 	    "id": "455852",
 	    "fecha_emision": "13/06/2023",
 	    "tipo_cobro": "EF",
-	    "total": "11200.0"
+	    "total": "900.0"
     }],
     "retencion": 
     [{
       "id": "56051",
       "fecha_emision": "13/06/2023",
-      "valor": "100.0",
+      "total": "100.0",
       "numero": "001-001-000005361",
       "autorizacion": "45678932598466966",
       "estado": "1"
