@@ -49,7 +49,7 @@ Atributos del objeto Documento:
 | `id` | varchar | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
 | `cliente_id` | varchar | 10 | Si | Identificador del cliente al que pertenece el documento en el sistema|
 | `suscripcion_id` | varchar | 10 | Si | Identificador de la suscripción al que pertenece el documento en el sistema|
-| `fecha_modificacion` | date | - | Si| Fecha límite de vigencia del documento|
+| `fecha_modificacion` | date | - | Si|Última fecha en la que se modificó|
 | `fecha_emision ` | date | - | Si| Fecha de creación del documento|
 | `fecha_vencimiento ` | date | - | Si| Fecha límite de vigencia del documento|
 | `numero`|varchar|17|Si|Número del documento|
