@@ -65,7 +65,7 @@ Las siguientes son url's válidas para uso del api:
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
-| `https://api.conpronto.com/registro/documento/`| POST |
+| `https://api.conpronto.com/documento/`| POST |
 | `https://api.conpronto.com/documento/`| PUT |
 | `https://api.conpronto.com/documento/<ID>`| GET |
 | `https://api.conpronto.com/documento/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`| GET |
@@ -83,10 +83,10 @@ Las siguientes son url's válidas para uso del api:
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
-| `https://api.conpronto.com/documento/`| POST |
-| `https://api.conpronto.com/documento/`| PUT |
-| `https://api.conpronto.com/documento/<ID>`| GET |
-| `https://api.conpronto.com/documento/`| GET |
+| `https://api.conpronto.com/retencion/`| POST |
+| `https://api.conpronto.com/retencion/`| PUT |
+| `https://api.conpronto.com/retencion/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`| GET |
+| `https://api.conpronto.com/re/`| GET |
 
 ### Url's de notificación
 

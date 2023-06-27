@@ -17,6 +17,7 @@
 ]
 ```
 Atributos del objeto Cobro.
+
 Los tipos de cobros soportados vía API son:
 
 | Valor       | Tipo                                 |
@@ -94,7 +95,9 @@ Usando el id devuelto en la creación de documento.
 ``` 
 ## Obtener Cobros por un rango de fechas (GET)
 
-Podemos consultar los cobros por un rango de fecha por medio de la url:
+`GET https://api.conpronto.com/cobro/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`
+
+Ejemplo:
 
 `GET https://api.conpronto.com/cobro/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`
 
@@ -123,8 +126,7 @@ Podemos consultar los cobros por un rango de fecha por medio de la url:
 ]
 ``` 
 
-
-## Obtener cobros realizados por Datafast o Payphone (GET)
+## Obtener Cobros realizados por Datafast o Payphone (GET)
 
 Podemos consultar los cobros realizados por Datafast o Payphone por medio de la url:
 

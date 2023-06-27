@@ -5,69 +5,42 @@
 ``` json title="Objeto Notificaciones:"
 [	
     {
-	    "id": "5422",
-        "campana": 
+	"id": "5422",
+    "campana": 
+    {
+        "campana_id": "5431",
+        "tipo": "WP",
+        "nombre_camp": "05.06.2023 11:01:16",
+	"plantilla": 
         {
-            "campana_id": "5431",
-            "tipo": "WhatsApp",
-            "nombre_camp": "05.06.2023 11:01:16",
-	    "plantilla": 
-        {
-            "plantilla_id": "452",
-            "nombre_temp": "VENCIDO_PLANTILLA_B",
+        "plantilla_id": "452",
+        "nombre_temp": "VENCIDO_PLANTILLA_B",
         }
-        },
-	    "contacto": 
-        {
-            "contacto_id": "113",
-            "cliente_id": "491",
-    	    "contacto_nombre": "Andrés",
-    	    "contacto_apellido": "López",
-    	    "contacto_movil": "+593942985587",
-    	    "contacto_email ": "alopez@gmail.com"
-    	},
+    },
+	"contacto": 
+    {
+        "contacto_id": "113",
+        "cliente_id": "491",
+        "contacto_nombre": "Andrés",
+        "contacto_apellido": "López",
+        "contacto_movil": "+593942985587",
+        "contacto_email ": "alopez@gmail.com"
+    },
 	    "fecha_envio": "05/06/2023 11:02:43",
         "fecha_actualizacion": "05/06/2023 11:02:45",
 	    "estado": "WhatsApp Delivered"
-	},
-	{
-	    "id": "5423",
-        "campana": 
-        {
-            "campana_id": "5421",
-            "tipo": "Email",
-            "nombre_camp": "05.06.2023 11:02:50",
-	    "plantilla": 
-        {
-            "plantilla_id": "453",
-            "nombre_temp": "VENCIDO_PLANTILLA_B_EMAIL",
-        }
-        },
-	    "contacto": 
-        {
-            "contacto_id": "113",
-            "cliente_id": "491",
-    	    "contacto_nombre": "Andrés",
-    	    "contacto_apellido": "López",
-    	    "contacto_movil": "+593942985587",
-    	    "contacto_email ": "alopez@gmail.com"
-        },
-        {   
-            "contacto_id": "134",
-            "cliente_id": "621",
-    	    "contacto_nombre": "Juan",
-    	    "contacto_apellido": "Mora",
-    	    "contacto_movil": "+593942985457",
-    	    "contacto_email ": "jmora@gmail.com"
-        },
-	    "fecha_envio": "05/06/2023 11:03:15",
-        "fecha_actualizacion": "05/06/2023 11:02:47",
-	    "estado": "Mailgun Read"
 	}
-],...
+]
 ```
 
 Atributos de un objeto Notificaciones:
+
+Los tipos de campaña son:
+
+| Valor       | Tipo                                 |
+| ----------- | ------------------------------------ |
+| `WP`       | Whatsapp                               |
+| `EM`       | Email|
 
 | Parámetro   | Tipo    | Longitud | Descripción |
 | ----------- | ------- | -------- | ----------- |
@@ -95,69 +68,61 @@ Se puede obtener una lista de todas las notificaciones enviadas por rango de fec
 ``` json title="Respuesta al consultar un listado de notificaciones:"
 [	
     {
-	    "id": "5422",
-        "campana": 
+	"id": "5422",
+    "campana": 
+    {
+        "campana_id": "5431",
+        "tipo": "WP",
+        "nombre_camp": "05.02.2023 11:01:16",
+	"plantilla": 
         {
-            "campana_id": "5431",
-            "tipo": "WhatsApp",
-            "nombre_camp": "05.06.2023 11:01:16",
-	    "plantilla": 
-        {
-            "plantilla_id": "452",
-            "nombre_temp": "VENCIDO_PLANTILLA_B",
+        "plantilla_id": "452",
+        "nombre_temp": "VENCIDO_PLANTILLA_B",
         }
-        },
-	    "contacto": 
-        {
-            "contacto_id": "113",
-            "cliente_id": "491",
-    	    "contacto_nombre": "Andrés",
-    	    "contacto_apellido": "López",
-    	    "contacto_movil": "+593942985587",
-    	    "contacto_email ": "alopez@gmail.com"
-    	},
-	    "fecha_envio": "05/06/2023 11:02:43",
-        "fecha_actualizacion": "05/06/2023 11:02:45",
+    },
+	"contacto": 
+    {
+        "contacto_id": "113",
+        "cliente_id": "491",
+        "contacto_nombre": "Andrés",
+        "contacto_apellido": "López",
+        "contacto_movil": "+593942985587",
+        "contacto_email ": "alopez@gmail.com"
+    },
+	    "fecha_envio": "05/02/2023 11:02:43",
+        "fecha_actualizacion": "05/02/2023 11:02:45",
 	    "estado": "WhatsApp Delivered"
 	},
-	{
-	    "id": "5423",
-        "campana": 
+    {
+	"id": "5688",
+    "campana": 
+    {
+        "campana_id": "8545",
+        "tipo": "EM",
+        "nombre_camp": "25.02.2023 11:01:16",
+	"plantilla": 
         {
-            "campana_id": "5421",
-            "tipo": "Email",
-            "nombre_camp": "05.06.2023 11:02:50",
-	    "plantilla": 
-        {
-            "plantilla_id": "453",
-            "nombre_temp": "VENCIDO_PLANTILLA_B_EMAIL",
+        "plantilla_id": "784",
+        "nombre_temp": "VENCIDO_PLANTILLA_B",
         }
-       },
-	    "contacto": 
-        {
-            "contacto_id": "113",
-            "cliente_id": "491",
-    	    "contacto_nombre": "Andrés",
-    	    "contacto_apellido": "López",
-    	    "contacto_movil": "+593942985587",
-    	    "contacto_email ": "alopez@gmail.com"
-    	}
-        {
-            "contacto_id": "134",
-            "cliente_id": "621",
-    	    "contacto_nombre": "Juan",
-    	    "contacto_apellido": "Mora",
-    	    "contacto_movil": "+593942985457",
-    	    "contacto_email ": "jmora@gmail.com"
-    	},
-	    "fecha_envio": "05/06/2023 11:03:15",
-        "fecha_actualizacion": "05/06/2023 11:02:47",
-	    "estado": "Mailgun Read"
-	}
-],...
+    },
+	"contacto": 
+    {
+        "contacto_id": "115",
+        "cliente_id": "754",
+        "contacto_nombre": "Juan",
+        "contacto_apellido": "López",
+        "contacto_movil": "+593978545512",
+        "contacto_email ": "jlopez@gmail.com"
+    },
+	    "fecha_envio": "25/02/2023 11:02:43",
+        "fecha_actualizacion": "25/02/2023 11:02:45",
+	    "estado": "Mailgun Delivered"
+	},
+]
 ```
 
-## Obtener un listado de mensajes por cliente (GET)
+## Obtener un listado de notificaciones por cliente (GET)
 
 `GET https://api.conpronto.com/cliente/<ID>/notificacion`
 
@@ -166,56 +131,119 @@ Devuelve las notificaciones enviadas a un cliente con el <ID> solicitado.
 ``` json title="Respuesta al consultar un listado de notificaciones:"
 [	
     {
-	    "id": "5422",
-        "campana": 
+	"id": "5422",
+    "campana": 
+    {
+        "campana_id": "5431",
+        "tipo": "WP",
+        "nombre_camp": "05.02.2023 11:01:16",
+	"plantilla": 
         {
-            "campana_id": "5431",
-            "tipo": "WhatsApp",
-            "nombre_camp": "05.06.2023 11:01:16",
-	    "plantilla": 
-        {
-            "plantilla_id": "452",
-            "nombre_temp": "VENCIDO_PLANTILLA_B",
+        "plantilla_id": "452",
+        "nombre_temp": "VENCIDO_PLANTILLA_B",
         }
-        },
-	    "contacto": 
-        {
-            "contacto_id": "113",
-            "cliente_id": "491",
-    	    "contacto_nombre": "Andrés",
-    	    "contacto_apellido": "López",
-    	    "contacto_movil": "+593942985587",
-    	    "contacto_email ": "alopez@gmail.com"
-    	},
-	    "fecha_envio": "05/06/2023 11:02:43",
-        "fecha_actualizacion": "05/06/2023 11:02:45",
+    },
+	"contacto": 
+    {
+        "contacto_id": "113",
+        "cliente_id": "491",
+        "contacto_nombre": "Andrés",
+        "contacto_apellido": "López",
+        "contacto_movil": "+593942985587",
+        "contacto_email ": "alopez@gmail.com"
+    },
+	    "fecha_envio": "05/02/2023 11:02:43",
+        "fecha_actualizacion": "05/02/2023 11:02:45",
 	    "estado": "WhatsApp Delivered"
 	},
-	{
-	    "id": "5423",
-        "campana": 
+    {
+	"id": "5688",
+    "campana": 
+    {
+        "campana_id": "8545",
+        "tipo": "EM",
+        "nombre_camp": "25.02.2023 11:01:16",
+	"plantilla": 
         {
-            "campana_id": "5421",
-            "tipo": "Email",
-            "nombre_camp": "05.06.2023 11:02:50",
-	    "plantilla": 
-        {
-            "plantilla_id": "453",
-            "nombre_temp": "VENCIDO_PLANTILLA_B_EMAIL",
+        "plantilla_id": "784",
+        "nombre_temp": "VENCIDO_PLANTILLA_B",
         }
-       },
-	    "contacto": 
+    },
+	"contacto": 
+    {
+        "contacto_id": "113",
+        "cliente_id": "491",
+        "contacto_nombre": "Andrés",
+        "contacto_apellido": "López",
+        "contacto_movil": "+593942985587",
+        "contacto_email ": "alopez@gmail.com"
+    },
+	    "fecha_envio": "25/02/2023 11:02:43",
+        "fecha_actualizacion": "25/02/2023 11:02:45",
+	    "estado": "Mailgun Delivered"
+	},
+]
+```
+
+## Obtener un listado de notificaciones por tipo de campaña (GET)
+
+`GET https://api.conpronto.com/notificacion/<TIPO_CAMPAÑA>/`
+
+Usando el código del tipo de campaña (WP o EM) de pago en la creación del cobro.
+
+``` json title="Respuesta al consultar un listado de notificaciones:"
+[	
+    {
+	"id": "5422",
+    "campana": 
+    {
+        "campana_id": "5431",
+        "tipo": "WP",
+        "nombre_camp": "05.02.2023 11:01:16",
+	"plantilla": 
         {
-            "contacto_id": "113",
-            "cliente_id": "491",
-    	    "contacto_nombre": "Andrés",
-    	    "contacto_apellido": "López",
-    	    "contacto_movil": "+593942985587",
-    	    "contacto_email ": "alopez@gmail.com"
-    	},
-	    "fecha_envio": "05/06/2023 11:03:15",
-        "fecha_actualizacion": "05/06/2023 11:02:47",
-	    "estado": "Mailgun Read"
-	}
-],...
+        "plantilla_id": "452",
+        "nombre_temp": "VENCIDO_PLANTILLA_B",
+        }
+    },
+	"contacto": 
+    {
+        "contacto_id": "113",
+        "cliente_id": "491",
+        "contacto_nombre": "Andrés",
+        "contacto_apellido": "López",
+        "contacto_movil": "+593942985587",
+        "contacto_email ": "alopez@gmail.com"
+    },
+	    "fecha_envio": "05/02/2023 11:02:43",
+        "fecha_actualizacion": "05/02/2023 11:02:45",
+	    "estado": "WhatsApp Delivered"
+	},
+    {
+	"id": "5688",
+    "campana": 
+    {
+        "campana_id": "8545",
+        "tipo": "WP",
+        "nombre_camp": "25.02.2023 11:01:16",
+	"plantilla": 
+        {
+        "plantilla_id": "784",
+        "nombre_temp": "VENCIDO_PLANTILLA_B",
+        }
+    },
+	"contacto": 
+    {
+        "contacto_id": "113",
+        "cliente_id": "491",
+        "contacto_nombre": "Andrés",
+        "contacto_apellido": "López",
+        "contacto_movil": "+593942985587",
+        "contacto_email ": "alopez@gmail.com"
+    },
+	    "fecha_envio": "25/02/2023 11:02:43",
+        "fecha_actualizacion": "25/02/2023 11:02:45",
+	    "estado": "WhatsApp Delivered"
+	},
+]
 ```

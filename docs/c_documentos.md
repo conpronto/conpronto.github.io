@@ -66,7 +66,7 @@ Atributos del objeto Documento:
 
 Para crear un documento se debe de hacer uso de la url:
 
-`POST https://api.conpronto.com/registro/documento/`
+`POST https://api.conpronto.com/documento/`
 
 Por medio del método POST enviando en el cuerpo del requerimiento los datos del documento.
 
@@ -184,11 +184,13 @@ Respuesta al consultar un documento:
 
 ## Obtener Documentos por rango de fechas (GET)
 
-Para obtener todos los documentos de la cuenta hacemos uso del endpoint:
+Para obtener los documentos de un rango de fechas determinado hacemos uso del endpoint:
+
+`GET https://api.conpronto.com/documento/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`
+
+Ejemplo:
 
 `GET https://api.conpronto.com/documento/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`
-
-Datos que devuelve al obtener un listado de documentos:
 
 ``` json title="Respuesta al consultar todos los documentos:"
 [{ 
