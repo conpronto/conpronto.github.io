@@ -105,7 +105,7 @@ Devuelve una suscripción con el <ID> solicitado.
    }
 ]
 ```
-## Obtener un listado de Suscripciones por cliente (GET)
+## Obtener Suscripciones por cliente (GET)
 
 Para obtener un listado de todos las Suscripciones creadas en el sistema se debe de hacer uso de la url:
 

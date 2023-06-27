@@ -68,7 +68,7 @@ Las siguientes son url's válidas para uso del api:
 | `https://api.conpronto.com/documento/`| POST |
 | `https://api.conpronto.com/documento/`| PUT |
 | `https://api.conpronto.com/documento/<ID>`| GET |
-| `https://api.conpronto.com/documento/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`| GET |
+| `https://api.conpronto.com/documento/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`| GET |
 
 ### Url's de cobro
 
@@ -76,7 +76,7 @@ Las siguientes son url's válidas para uso del api:
 | ----------- | ---------------------------------- |
 | `https://api.conpronto.com/documento/<ID>/cobro/`| POST |
 | `https://api.conpronto.com/documento/<ID>/cobro/`| GET |
-| `https://api.conpronto.com/cobro/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`| GET |
+| `GET https://api.conpronto.com/cobro/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`| GET |
 | `https://api.conpronto.com/cobro/<PASARELA>/`| GET |
 
 ### Url's de retención
@@ -85,8 +85,8 @@ Las siguientes son url's válidas para uso del api:
 | ----------- | ---------------------------------- |
 | `https://api.conpronto.com/retencion/`| POST |
 | `https://api.conpronto.com/retencion/`| PUT |
-| `https://api.conpronto.com/retencion/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`| GET |
-| `https://api.conpronto.com/re/`| GET |
+| `https://api.conpronto.com/retencion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`| GET |
+| `https://api.conpronto.com/retencion/`| GET |
 
 ### Url's de notificación
 

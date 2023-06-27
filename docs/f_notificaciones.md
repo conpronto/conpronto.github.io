@@ -59,7 +59,7 @@ Los tipos de campaña son:
 | `fecha_actualizacion`|date|-|Fecha de la actualización del estado del mensaje|
 | `estado`|varchar|20|Estado de la notificación, leído, entregado, error|
 
-## Obtener un listado de notificaciones por rango de fechas (GET)
+## Obtener notificaciones por rango de fechas (GET)
 
 Se puede obtener una lista de todas las notificaciones enviadas por rango de fecha.
 
@@ -122,7 +122,7 @@ Se puede obtener una lista de todas las notificaciones enviadas por rango de fec
 ]
 ```
 
-## Obtener un listado de notificaciones por cliente (GET)
+## Obtener notificaciones por cliente (GET)
 
 `GET https://api.conpronto.com/cliente/<ID>/notificacion`
 
@@ -185,7 +185,7 @@ Devuelve las notificaciones enviadas a un cliente con el <ID> solicitado.
 ]
 ```
 
-## Obtener un listado de notificaciones por tipo de campaña (GET)
+## Obtener notificaciones por tipo de campaña (GET)
 
 `GET https://api.conpronto.com/notificacion/<TIPO_CAMPAÑA>/`
 

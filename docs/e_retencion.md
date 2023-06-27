@@ -79,7 +79,7 @@ Los datos que se envían al momento de la actualización son los mismos que al m
 
 ## Obtener una retención (GET)
 
-`GET https://api.conpronto.com/documento/<ID>/`
+`GET https://api.conpronto.com/retencion/<ID>/`
 
 Devuelve una retención con el `<ID>` solicitado.
 
