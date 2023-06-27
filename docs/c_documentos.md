@@ -182,11 +182,11 @@ Respuesta al consultar un documento:
   }]
 ```
 
-## Obtener un listado de Documentos (GET)
+## Obtener un listado de Documentos por rango de fechas (GET)
 
 Para obtener todos los documentos de la cuenta hacemos uso del endpoint:
 
-`GET https://api.conpronto.com/documento/`
+`GET https://api.conpronto.com/documento/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`
 
 Datos que devuelve al obtener un listado de documentos:
 
@@ -196,7 +196,7 @@ Datos que devuelve al obtener un listado de documentos:
     "cliente_id": "52235",
     "suscripcion:id": "74135",
     "fecha_modificacion": "22/06/2023",
-    "fecha_emision": "13/06/2023",
+    "fecha_emision": "13/02/2023",
     "fecha_vencimiento": "17/10/2023",
     "numero ": "001-001-000000251",
     "autorizacion": "45678932598466966",
@@ -227,7 +227,7 @@ Datos que devuelve al obtener un listado de documentos:
     "cliente_id": "54522",
     "suscripcion_id": "325698",
     "fecha_modificacion": "22/06/2023",
-    "fecha_emision": "13/05/2023",
+    "fecha_emision": "25/02/2023",
     "fecha_vencimiento": "17/05/2023",
     "numero": "001-001-000000471",
     "autorizacion": "456789325984646466966",

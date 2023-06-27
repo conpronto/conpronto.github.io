@@ -69,7 +69,7 @@ Cambiando el parámetro por el id del documento (devuelto al momento de crear el
 
 :bangbang: Los campos marca_tarjeta y pasarela_pagos solo son obligatorios cuando el tipo de cobro es tarjeta.
 
-## Obtener Cobros (GET)
+## Obtener Cobros por documento (GET)
 
 Podemos consultar los cobros que tiene un documento por medio de la url:
 
@@ -82,6 +82,9 @@ Usando el id devuelto en la creación de documento.
    {
 	"id": "7423",
 	"documento_id": "1234",
+   "marca_tarjeta": Null,
+   "pasarela_pago": Null,	
+ 	"fecha_emision": "13/06/2023",  
 	"fecha_modificacion": "22/06/2023",
 	"fecha_emision": "13/06/2023",
 	"tipo_cobro": "CH",
@@ -89,32 +92,67 @@ Usando el id devuelto en la creación de documento.
    }
 ]
 ``` 
+## Obtener Cobros por un rango de fechas (GET)
 
-## Obtener cobros realizados por Datafast o Payphone (GET)
+Podemos consultar los cobros por un rango de fecha por medio de la url:
 
-Podemos consultar los cobros realizados por Datafast o Payphone por medio de la url:
-
-`GET https://api.conpronto.com/cobro/datafast/`
-
-`GET https://api.conpronto.com/cobro/payphone/`
+`GET https://api.conpronto.com/cobro/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`
 
 ``` json title="Respuesta al consultar los cobros:"
 [
    {
 	"id": "7423",
 	"documento_id": "1234",
-    "payment_brand": "VISA",
-	"fecha_emision": "13/06/2023 13:21:01",
-	"tipo_cobro": "TC",
+   "marca_tarjeta": Null,
+   "pasarela_pago": Null,	
+	"fecha_emision": "15/02/2023",
+	"fecha_modificacion": "22/06/2023",
+	"tipo_cobro": "CH",
 	"total": "1100.0"
    },
    {
-	"id": "7425",
-	"documento_id": "1238",
-    "payment_brand": "MASTERCARD",
-	"fecha_emision": "21/06/2023 13:23:01",
-	"tipo_cobro": "TC",
-	"total": "1283.0"
+   "id": "7423",
+   "documento_id": "1234",
+   "marca_tarjeta": "MASTERCARD",
+   "pasarela_pago": "DT",	
+   "fecha_emision": "13/02/2023 13:21:01",
+   "fecha_modificacion": "22/06/2023",	
+   "tipo_cobro": "TC",
+   "total": "1100.0"
+   }
+]
+``` 
+
+
+## Obtener cobros realizados por Datafast o Payphone (GET)
+
+Podemos consultar los cobros realizados por Datafast o Payphone por medio de la url:
+
+`GET https://api.conpronto.com/cobro/<PASARELA>/`
+
+Usando el código de la pasarela de pago en la creación del cobro.
+
+``` json title="Respuesta al consultar los cobros:"
+[
+   {
+   "id": "7423",
+   "documento_id": "1234",
+   "marca_tarjeta": "MASTERCARD",
+   "pasarela_pago": "DT",	
+   "fecha_emision": "13/06/2023 13:21:01",
+   "fecha_modificacion": "22/06/2023",	
+   "tipo_cobro": "TC",
+   "total": "1100.0"
+   },
+   {
+   "id": "4586",
+   "documento_id": "5678",
+   "marca_tarjeta": "VISA",
+   "pasarela_pago": "DT",	
+   "fecha_emision": "15/06/2023 13:50:01",
+   "fecha_modificacion": "27/06/2023",	
+   "tipo_cobro": "TC",
+   "total": "200.0"
    }
 ]
 ```
