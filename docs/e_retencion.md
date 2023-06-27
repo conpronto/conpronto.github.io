@@ -29,7 +29,7 @@ Los estados de la retención son:
 | `fecha_emision`| date  |-|Fecha que se realiza la transacción|
 | `fecha_modificacion`| date  |-|Última fecha en la que se modificó|
 | `total`|decimal|10|Valor de la retención|
-| `retencion`|varchar|50|Número de retención|
+| `numero`|varchar|50|Número de retención|
 | `autorización`|varchar|50|Número de la retención|
 | `estado`|varchar|1|Activo, anulado|
 
