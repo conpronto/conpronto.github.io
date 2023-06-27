@@ -66,4 +66,4 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
    
 copyright: |
-  &copy; 2023 <a href="https://conpronto.com/"  target="_blank" rel="noopener">PRONTO</a>
+  &copy; 2023 <a href="https://console.conpronto.com/login"  target="_blank" rel="noopener">PRONTO</a>
