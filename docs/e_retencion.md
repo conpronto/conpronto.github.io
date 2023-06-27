@@ -8,7 +8,7 @@
        "fecha_modificacion": "22/06/2023",
        "fecha_emision": "13/06/2023",
        "total": "100.0",
-       "retencion ": "001-001-000005361",
+       "numero": "001-001-000005361",
        "autorizacion": "45678932598466966",
        "estado": "1"
 }]
@@ -47,7 +47,7 @@ Por medio del método POST enviando en el cuerpo del requerimiento los datos del
        "id_documento": "56051",
        "fecha_emision": "13/06/2023",
        "total": "100.0",
-       "retencion ": "001-001-000005361",
+       "numero": "001-001-000005361",
        "autorizacion": "45678932598466966",
        "estado": "1"
     }
@@ -70,7 +70,7 @@ Los datos que se envían al momento de la actualización son los mismos que al m
        "id_documento": "54610",
        "fecha_emision": "13/06/2023",
        "total": "100.0",
-       "retencion ": "001-001-000005361",
+       "numero": "001-001-000005361",
        "autorizacion": "45678932598466966",
        "estado": "1"
     }
@@ -91,7 +91,7 @@ Devuelve una retención con el `<ID>` solicitado.
        "fecha_modificacion": "22/06/2023",
        "fecha_emision": "13/06/2023",
        "total": "100.0",
-       "retencion ": "001-001-000005361",
+       "numero": "001-001-000005361",
        "autorizacion": "45678932598466966",
        "estado": "1"
     }
@@ -113,7 +113,7 @@ Datos que devuelve al obtener un listado de documentos:
        "fecha_modificacion": "22/06/2023",
        "fecha_emision": "13/02/2023",
        "total": "100.0",
-       "retencion ": "001-001-000005361",
+       "numero": "001-001-000005361",
        "autorizacion": "45678932598466966",
        "estado": "1"
 	},
@@ -123,7 +123,7 @@ Datos que devuelve al obtener un listado de documentos:
        "fecha_modificacion": "22/06/2023",
        "fecha_emision": "20/02/2023",
        "total": "100.0",
-       "retencion ": "001-001-000005745",
+       "numero": "001-001-000005745",
        "autorizacion": "20218932598466966",
        "estado": "1"
 	},
