@@ -101,9 +101,11 @@ Devuelve una retención con el `<ID>` solicitado.
 
 Para obtener las retenciones de un rango de fechas determinado hacemos uso del endpoint:
 
-`GET https://api.conpronto.com/retencion/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`
+`GET https://api.conpronto.com/retencion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>/`
 
-Datos que devuelve al obtener un listado de documentos:
+Ejemplo:
+
+`GET https://api.conpronto.com/retencion/?fecha_inicial=1/02/2023&fecha_final=28/02/2023/`
 
 ``` json title="Respuesta al consultar un listado de retenciones:"
 [	

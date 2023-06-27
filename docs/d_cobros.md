@@ -95,7 +95,7 @@ Usando el id devuelto en la creación de documento.
 ``` 
 ## Obtener Cobros por un rango de fechas (GET)
 
-`GET https://api.conpronto.com/cobro/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`
+`GET https://api.conpronto.com/cobro/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>/`
 
 Ejemplo:
 

@@ -67,8 +67,8 @@ Las siguientes son url's válidas para uso del api:
 | ----------- | ---------------------------------- |
 | `https://api.conpronto.com/documento/`| POST |
 | `https://api.conpronto.com/documento/`| PUT |
-| `https://api.conpronto.com/documento/<ID>`| GET |
-| `https://api.conpronto.com/documento/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`| GET |
+| `https://api.conpronto.com/documento/<ID>/`| GET |
+| `https://api.conpronto.com/documento/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>/`| GET |
 
 ### Url's de cobro
 
@@ -76,7 +76,7 @@ Las siguientes son url's válidas para uso del api:
 | ----------- | ---------------------------------- |
 | `https://api.conpronto.com/documento/<ID>/cobro/`| POST |
 | `https://api.conpronto.com/documento/<ID>/cobro/`| GET |
-| `GET https://api.conpronto.com/cobro/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`| GET |
+| `GET https://api.conpronto.com/cobro/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>/`| GET |
 | `https://api.conpronto.com/cobro/<PASARELA>/`| GET |
 
 ### Url's de retención
@@ -85,15 +85,15 @@ Las siguientes son url's válidas para uso del api:
 | ----------- | ---------------------------------- |
 | `https://api.conpronto.com/retencion/`| POST |
 | `https://api.conpronto.com/retencion/`| PUT |
-| `https://api.conpronto.com/retencion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`| GET |
+| `https://api.conpronto.com/retencion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>/`| GET |
 | `https://api.conpronto.com/retencion/`| GET |
 
 ### Url's de notificación
 
 | URL     |Método                                 |
 | ----------- | ---------------------------------- |
-| `https://api.conpronto.com/notificacion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`| GET |
-| `https://api.conpronto.com/cliente/<ID>/notificacion`| GET |
+| `https://api.conpronto.com/notificacion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>/`| GET |
+| `https://api.conpronto.com/cliente/<ID>/notificacion/`| GET |
 
 ### Url's de suscripción
 

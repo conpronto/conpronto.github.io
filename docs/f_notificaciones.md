@@ -63,7 +63,11 @@ Los tipos de campaña son:
 
 Se puede obtener una lista de todas las notificaciones enviadas por rango de fecha.
 
-`GET https://api.conpronto.com/notificacion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`
+`GET https://api.conpronto.com/notificacion/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>/`
+
+Ejemplo:
+
+`GET https://api.conpronto.com/notificacion/?fecha_inicial=1/02/2023&fecha_final=28/02/2023/`
 
 ``` json title="Respuesta al consultar un listado de notificaciones:"
 [	

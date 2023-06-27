@@ -186,11 +186,11 @@ Respuesta al consultar un documento:
 
 Para obtener los documentos de un rango de fechas determinado hacemos uso del endpoint:
 
-`GET https://api.conpronto.com/documento/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>`
+`GET https://api.conpronto.com/documento/?fecha_inicial=<FECHA_INICIAL>&fecha_final=<FECHA_FINAL>/`
 
 Ejemplo:
 
-`GET https://api.conpronto.com/documento/?fecha_inicial=1/02/2023&fecha_final=28/02/2023`
+`GET https://api.conpronto.com/documento/?fecha_inicial=1/02/2023&fecha_final=28/02/2023/`
 
 ``` json title="Respuesta al consultar todos los documentos:"
 [{ 
