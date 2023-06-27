@@ -182,7 +182,7 @@ Respuesta al consultar un documento:
   }]
 ```
 
-## Obtener un listado de Documentos por rango de fechas (GET)
+## Obtener Documentos por rango de fechas (GET)
 
 Para obtener todos los documentos de la cuenta hacemos uso del endpoint:
 
