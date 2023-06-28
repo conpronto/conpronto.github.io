@@ -39,7 +39,7 @@ Los tipos de campaña son:
 
 | Valor       | Tipo                                 |
 | ----------- | ------------------------------------ |
-| `WP`       | Whatsapp                               |
+| `WS`       | Whatsapp                               |
 | `EM`       | Email|
 
 | Parámetro   | Tipo    | Longitud | Descripción |
