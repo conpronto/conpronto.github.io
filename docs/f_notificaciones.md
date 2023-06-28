@@ -9,7 +9,7 @@
     "campana": 
     {
         "campana_id": "5431",
-        "tipo": "WP",
+        "tipo": "WS",
         "nombre_camp": "05.06.2023 11:01:16",
 	"plantilla": 
         {
@@ -76,7 +76,7 @@ Ejemplo:
     "campana": 
     {
         "campana_id": "5431",
-        "tipo": "WP",
+        "tipo": "WS",
         "nombre_camp": "05.02.2023 11:01:16",
 	"plantilla": 
         {
@@ -139,7 +139,7 @@ Devuelve las notificaciones enviadas a un cliente con el <ID> solicitado.
     "campana": 
     {
         "campana_id": "5431",
-        "tipo": "WP",
+        "tipo": "WS",
         "nombre_camp": "05.02.2023 11:01:16",
 	"plantilla": 
         {
@@ -193,7 +193,7 @@ Devuelve las notificaciones enviadas a un cliente con el <ID> solicitado.
 
 `GET https://api.conpronto.com/notificacion/<TIPO_CAMPAÑA>/`
 
-Usando el código del tipo de campaña (WP o EM) de pago en la creación del cobro.
+Usando el código del tipo de campaña (WS o EM) de pago en la creación del cobro.
 
 ``` json title="Respuesta al consultar un listado de notificaciones:"
 [	
@@ -202,7 +202,7 @@ Usando el código del tipo de campaña (WP o EM) de pago en la creación del cob
     "campana": 
     {
         "campana_id": "5431",
-        "tipo": "WP",
+        "tipo": "WS",
         "nombre_camp": "05.02.2023 11:01:16",
 	"plantilla": 
         {
@@ -228,7 +228,7 @@ Usando el código del tipo de campaña (WP o EM) de pago en la creación del cob
     "campana": 
     {
         "campana_id": "8545",
-        "tipo": "WP",
+        "tipo": "WS",
         "nombre_camp": "25.02.2023 11:01:16",
 	"plantilla": 
         {
